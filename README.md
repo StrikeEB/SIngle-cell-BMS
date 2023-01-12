@@ -2,6 +2,7 @@
 
 * [Project motivation](#Project-motivation)
 * [Prototype design, architecture and scope](Prototype-design,-architecture-and-scope)
+* [List of parts](List-of-parts)
 * [Methodology](Methodology)
 * [Voltage sensor measuring battery discharge](Voltage-sensor-measuring-battery-discharge)
 * [Measuring cell’s temperature](Measuring-cell’s-temperature)
@@ -22,6 +23,7 @@
 Batteries are an enabler of the renewable future. However, if not looked after, they might cause fires, explosions or simply not deliver the crucial services required (Ma et al, 2018; Pattipati et al, 2011). Even with the current technology, battery performance is difficult to predict (Ungurean et al, 2016). Better understanding and innovation in the field will help to increase safety, reliability and affordability of this crucial technology. 
 
 Building a single-cell Battery Monitoring System (“BMS”) from scratch is a good way to learn about the cell-level performance and pin-point challenges under different battery use cases at this level. The prototype has a scalable Internet-of-Things (“IoT”) architecture and could be expanded horizontally to monitor multiple cells simultaneously or vertically to monitor a multi-cell rack.
+
 ## Prototype design, architecture and scope 
 
 The prototype ecosystem consists of a single-cell Li-Po battery, a load to discharge it and a charger. The battery performance evaluation when discharging is executed remotely.
@@ -32,10 +34,41 @@ The prototype’s IoT architecture is mostly based on the stack proposed by Prof
 
 ![Alt text]( https://github.com/StrikeEB/Single-cell-BMS/blob/main/Figure%202_IoT%20Architecture.jpg)
 
-This prototype utilises Arduino Elegoo and Adafruit learning tools. Full list of parts is shared in the GitHub repository (Butkute, 2023). 
+This prototype utilises Arduino Elegoo and Adafruit learning tools. 
+
 The prototype is sensing only and the controls therefore are done manually. The current design requires Li-Po to be charged-up using a charger and then plugged in to the BMS to measure voltage, current flow and temperature as it’s discharging. These three measurements allow to calculate a number of Key Performance Indicators (“KPIs”) and calculated variables to monitor operational activity (NPTEL, 2020). 
 
 ![Alt text]( https://github.com/StrikeEB/Single-cell-BMS/blob/main/Figure%203_Sensed%20data%20points%20and%20possible%20outputs.jpg)
+
+## List of parts
+
+**Hardware**
+
+- Li-Po 3.7Vbattery
+- Li-Po discharger
+- Two breadboards
+- ESP832
+- Arduino mega
+- 2 resistors
+- RPI4
+- L293D motor driver
+- Blade motor
+- Temperature sensor LM35
+- Current AZ Delivery ACS712 30A sensor
+
+
+**Software**
+
+
+- Arduino IDE
+- MQTT Server
+- MQTT Explorer
+- PowerBI Desktop
+- Telegraf
+- InfluxDB
+- Putty (for RPI4)
+
+
 
 ## Methodology 
 
