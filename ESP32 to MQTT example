@@ -1,5 +1,10 @@
 //This code was generated using ChatGPT
 //Arduino_secrets.h file will need to be created separately to include login details for Wi-Fi and MQTT
+// what should be included in Arduino_secrets.h file?
+//#define SECRET_SSID "your ssid"
+//#define SECRET_PASS "your password"
+//#define SECRET_MQTTUSER "your user"
+//#define SECRET_MQTTPASS "your password"
 
 
 #include <WiFi.h>
