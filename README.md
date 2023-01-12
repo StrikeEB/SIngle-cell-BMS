@@ -38,6 +38,7 @@ The prototype is sensing only and the controls therefore are done manually. The 
 ![Alt text]( https://github.com/StrikeEB/Single-cell-BMS/blob/main/Figure%203_Sensed%20data%20points%20and%20possible%20outputs.jpg)
 
 ## Methodology 
+
 A top-down and reiterative approach was used to creating design and build the BMS prototype:
 
 ![Alt text]( https://github.com/StrikeEB/Single-cell-BMS/blob/main/Figure%204_Approach%20to%20creating%20design%20and%20building%20BMS%20prototype.jpg)
@@ -58,7 +59,7 @@ Voltage is measured by dividing the input voltage against two resistors as descr
 
 Ideally, reference voltage and resistance R1 and R2  would be measured by testing a specific battery multiple times, but due to time constraints they were taken from the DroneBot Workshop (DroneBot, 2021) and integrated with the LCD and fan motor code proposed by Elegoo (Elegoo, 2020; Moreno, 2020). Full code is available in the dedicated GitHub repository (Butkute, 2023). 
 
-https://github.com/StrikeEB/Single-cell-BMS/blob/14084cba1bab109f6756acc41672bd7fc021f4ca/BMS_V%2CT%2CC.ino##L148-L158
+https://github.com/StrikeEB/Single-cell-BMS/blob/5f5b5132ea5286ed6d1b0b426c6343dd84a4ec2d/BMS%20code#L148-L158
 
 To ensure that Li-Po and not Arduino is powering the motor, a power supply module was used (Elegoo, 2020, p. 199). It was proven that this method works as when Li-Po is disconnected the motor stops spinning. Voltage is measured between the Li-Po and the motor.
 Note, LCD connection also requires a separate breadboard so that it would be powered by Arduino as Li-Po is not powerful enough to drive both the motor and the screen.
