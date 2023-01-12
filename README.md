@@ -9,5 +9,5 @@
 
 
 
-#Project motivation
+# Project motivation
 Batteries are an enabler of the renewable future. However, if not looked after, they might cause fires, explosions or simply not deliver the crucial services required (Ma et al, 2018; Pattipati et al, 2011). Even with the current technology, battery performance is difficult to predict (Ungurean et al, 2016). Better understanding and innovation in the field will help to increase safety, reliability and affordability of this crucial technology. 
