@@ -1,6 +1,6 @@
 ### Table of Contents
 
-  * [Project motivation](#Project motivation)
+  * [Project motivation](#Project-motivation)
   * [Workstream 1 – how to sense and share data](#workstream-1---how-to-sense-and-share-data)
   * [Workstream 2 – building a gateway for obtaining data](#workstream-2---building-a-gateway-for-obtaining-data)
   * [Workstream 3 – setting up a database, analysing and visualising data](#workstream-3---setting-up-a-database--analysing-and-visualising-data)
