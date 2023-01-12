@@ -80,19 +80,19 @@ The temperature sensor LM35 was used. Franklin Electric Grid Solutions tutorial 
 
 The code and wiring methodology was taken from the Arduino temperature sensor tutorial (Tutorials Point, n.d.) and added to the voltage set up shown above by adding an additional void function do_temp. 
 
-https://github.com/StrikeEB/Single-cell-BMS/blob/14084cba1bab109f6756acc41672bd7fc021f4ca/BMS_V%2CT%2CC.ino##L160-L171
+https://github.com/StrikeEB/Single-cell-BMS/blob/5f5b5132ea5286ed6d1b0b426c6343dd84a4ec2d/BMS%20code#L160-L171
 
 # Measuring current flow
 
 The current is measured with AZ Delivery ACS712 30A sensor. The datasheet (Allegro, n.d.) and Robojax tutorial were used for code development (Robojax, 2020). To measure the current, Robojax_AllegroACS_Current_Sensor.h library has to be added. It’s also important to choose the correct model type as explained on the Robojax website (Robojex, 2020).
 
-https://github.com/StrikeEB/Single-cell-BMS/blob/14084cba1bab109f6756acc41672bd7fc021f4ca/BMS_V%2CT%2CC.ino##L94-L97
+https://github.com/StrikeEB/Single-cell-BMS/blob/5f5b5132ea5286ed6d1b0b426c6343dd84a4ec2d/BMS%20code#L94-L97
+
 
 Remaining code is similar to temperature and voltage. An additional do_current void function needs to be added: 
 
 
-https://github.com/StrikeEB/Single-cell-BMS/blob/14084cba1bab109f6756acc41672bd7fc021f4ca/BMS_V%2CT%2CC.ino##L173-L183
-
+https://github.com/StrikeEB/Single-cell-BMS/blob/5f5b5132ea5286ed6d1b0b426c6343dd84a4ec2d/BMS%20code#L173-L183
 
 The code was then integrated with the main temperature and voltage code. Robojax tutorial also shows how to connect the sensor to the load and battery (Robojax, 2020):
 
