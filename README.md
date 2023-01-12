@@ -20,6 +20,7 @@
 ## Project motivation
 
 Batteries are an enabler of the renewable future. However, if not looked after, they might cause fires, explosions or simply not deliver the crucial services required (Ma et al, 2018; Pattipati et al, 2011). Even with the current technology, battery performance is difficult to predict (Ungurean et al, 2016). Better understanding and innovation in the field will help to increase safety, reliability and affordability of this crucial technology. 
+
 Building a single-cell Battery Monitoring System (“BMS”) from scratch is a good way to learn about the cell-level performance and pin-point challenges under different battery use cases at this level. The prototype has a scalable Internet-of-Things (“IoT”) architecture and could be expanded horizontally to monitor multiple cells simultaneously or vertically to monitor a multi-cell rack.
 ## Prototype design, architecture and scope 
 
@@ -42,16 +43,18 @@ A top-down and reiterative approach was used to creating design and build the BM
 ![Alt text]( https://github.com/StrikeEB/Single-cell-BMS/blob/main/Figure%204_Approach%20to%20creating%20design%20and%20building%20BMS%20prototype.jpg)
 
 First, a scientific literature and industry research of the problem, i.e. battery performance, was done to develop a vision for the tool. The subsequent design process was in particular influenced by the lecture series on the fundamentals of battery technology and economics led by Prof. Jhunjhunwala (NPTEL, 2020).
+
 Existing prototypes and reports addressing similar challenges were also researched. Two most relevant prototypes discovered were developed by the online community Hackster’s member Katarinak998 (Katarinak998, 2021) and Adafruit website contributor Liz Clark (Clark, 2022). 
+
 A common shortcoming of similar BMS prototypes found online was lack of scalable IoT architecture. Solution delivered by this prototype is based on the IoT architecture of a Plant Monitoring system developed by  Prof. Wilson (Wilson, n.d.). Some parts of the stack were changed to meet specific vision needs.
+
 Then, the available tools and their features were studied. In particular,  factsheets (J&A, 2017), Elegoo kit tutorials (Elegoo, 2020) and Elegoo tutorials GitHub repository developed by Richardo Moreno (Moreno, 2020) helped to understand what parts can be used, their capabilities, limitations and also compatibility with other parts, software and libraries. Methodology of key design features and journey of defining them is discussed below. Learnings are discussed in section 4.
  
 # Voltage sensor measuring battery discharge
 Voltage is measured by dividing the input voltage against two resistors as described in an online article by EG Projects (EG Projects, n.d.).  
 
-![Alt text](https://github.com/StrikeEB/Single-cell-BMS/blob/main/Figure%205_Voltage%20calculation%20(EG%20projects%20(n.d.).jpg)
 
-![Alt text](https://github.com/StrikeEB/Single-cell-BMS/blob/main/Figure%205_Voltage%20calculation%20(EG%20projects%20(n.d.).jpg)
+![Alt text]([https://github.com/StrikeEB/Single-cell-BMS/blob/main/Figure%205_Voltage%20calculation%20(EG%20projects%20(n.d.).jpg](https://github.com/StrikeEB/Single-cell-BMS/blob/main/Figure%205_Voltage%20calculation%20(EG%20projects%20(n.d.).jpg))
 
 Ideally, reference voltage and resistance R1 and R2  would be measured by testing a specific battery multiple times, but due to time constraints they were taken from the DroneBot Workshop (DroneBot, 2021) and integrated with the LCD and fan motor code proposed by Elegoo (Elegoo, 2020; Moreno, 2020). Full code is available in the dedicated GitHub repository (Butkute, 2023). 
 
