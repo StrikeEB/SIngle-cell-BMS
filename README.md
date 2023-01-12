@@ -51,6 +51,8 @@ Voltage is measured by dividing the input voltage against two resistors as descr
 
 ![Alt text](https://github.com/StrikeEB/Single-cell-BMS/blob/main/Figure%205_Voltage%20calculation%20(EG%20projects%20(n.d.).jpg)
 
+![Alt text](https://github.com/StrikeEB/Single-cell-BMS/blob/main/Figure%205_Voltage%20calculation%20(EG%20projects%20(n.d.).jpg)
+
 Ideally, reference voltage and resistance R1 and R2  would be measured by testing a specific battery multiple times, but due to time constraints they were taken from the DroneBot Workshop (DroneBot, 2021) and integrated with the LCD and fan motor code proposed by Elegoo (Elegoo, 2020; Moreno, 2020). Full code is available in the dedicated GitHub repository (Butkute, 2023). 
 
 https://github.com/StrikeEB/Single-cell-BMS/blob/14084cba1bab109f6756acc41672bd7fc021f4ca/BMS_V%2CT%2CC.ino##L148-L158
